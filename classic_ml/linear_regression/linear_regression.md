@@ -29,7 +29,7 @@ How to get this:
 Lets write out our MSE Loss in matrix form: 
 $L(w) = (Xw-y)^T (Xw-y)$ will be a vector of errors (for each object).  
 Let's take the derivative (with respect to $w$):  
-$$ \frac{\partial L}{\partial w} =  \frac{\partial((w^TX^T -y^T)(Xw-y))}{\partial w} = \frac{\partial (w^T X^TXw - 2 y^TXw + y^Ty)}{\partial w}  =  \frac{\partial(\langle Xw, Xw\rangle)}{\partial w} - 2X^Ty = 2 X^T X \frac{\langle \partial w, w \rangle}{\partial w} - 2X^Ty = \underbrace{2 X^T X w - 2X^Ty}_{result}$$  
+$$\frac{\partial L}{\partial w} =  \frac{\partial((w^TX^T -y^T)(Xw-y))}{\partial w} = \frac{\partial (w^T X^TXw - 2 y^TXw + y^Ty)}{\partial w}  =  \frac{\partial(\langle Xw, Xw\rangle)}{\partial w} - 2X^Ty = 2 X^T X \frac{\langle \partial w, w \rangle}{\partial w} - 2X^Ty = \underbrace{2 X^T X w - 2X^Ty}_{result}$$  
 Because the MSE function is *convex*, for us would be enough to find the extremum place and that will be the minimum.  
 $$\frac{\partial L}{\partial w} =2 X^T X w - 2y^TX = 0  
 \Rightarrow\\ w = (X^TX)^{-1}X^Ty$$
