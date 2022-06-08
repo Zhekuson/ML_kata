@@ -20,7 +20,7 @@ $X  w = y$
 ## Other useful things
 ### Regularization
 
-### Analytical Solution (optima)
+### Analytical solution (optima)
 
 In matrix form the best solution (for MSE) is:  
 **//TBD** - how to get the solution in matrix form  
@@ -33,7 +33,7 @@ $w = (X^T X)^{-1} X^T y = X^+ y $
 2) **Q:** How can we use linear regression for another types of dependencies?  And why not?  
 **A:** That causes significant increase in dimensions, if we take exponents or square roots of the features (or something different). So it's possible in case of other dependencies, but there are more appropriate models for that.  
 3) **Q:** Get the optima analytic solution in matrix form?  
-**A:** See the solution [**here**]
+**A:** See the solution [**here**](#analytical-solution-optima)
 
 
 
